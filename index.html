@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1></h1>
+    </header>
+    <main class="container">
+      <button onclick="consoleClick()" class="button">Console</button>
+      <button onclick="alertClick()" class="button">Alert</button>
+      <button onclick="promptClick()" class="button">Prompt</button>
+      <button onclick="somaClick()" class="button">Soma</button>
+    </main>
+    <script src="app.js"></script>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #1e3a8a);
+        font-family: Arial, sans-serif;
+        color: white;
+      }
+
+      header {
+        text-align: center;
+        padding: 50px 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+        color: #60a5fa;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30px 20px;
+      }
+
+      .button {
+        width: 180px;
+        padding: 18px;
+        border: none;
+        border-radius: 12px;
+        background: #2563eb;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px #00000033;
+      }
+
+      .button:hover {
+        background: #3b82f6;
+        transform: translateY(-4px);
+      }
+
+      .button:active {
+        transform: scale(0.97);
+      }
+
+      @media (max-width: 600px) {
+        header {
+          padding: 35px 15px;
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .container {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    </style>
+  </body>
+</html>
